@@ -1,0 +1,16 @@
+## Chapter 8: Microsoft Purview: Records, Insider Risk, eDiscovery, and Privacy — Flashcards
+
+| # | Front (Question) | Back (Answer) |
+|---|-----------------|---------------|
+| 1 | Retention policy vs retention label — key difference? | Policy = applied at container level (site, mailbox, all locations), same rule for everything inside. Label = applied at item level, travels with the content, supports auto-apply via trainable classifiers/sensitive info types, and enables records declaration. Exam tip: labels are more granular and explicit. |
+| 2 | Retention conflict resolution — order of principles | 1) Retention always wins over deletion. 2) Longest retention period wins. 3) Explicit (label on item) is favored over implicit (policy on container). Exam tip: memorize 'retention beats deletion' first. |
+| 3 | eDiscovery tool tiers — what does each provide? | Content search: keyword search + export only. eDiscovery Standard: case management, holds, search, export (included E3). eDiscovery Premium: adds custodian management, review sets, analytics (near-duplicate, email threading), requires E5/add-on. |
+| 4 | Audit (Standard) log retention period? | 180 days by default. Included with E1/E3. Exam tip: if a scenario needs data older than 180 days, Standard isn't enough. |
+| 5 | Audit (Premium) log retention period? | 365 days by default, extendable to 1/7/10 years with add-on license. Also grants access to crucial events (e.g., MailItemsAccessed) and higher-bandwidth Management Activity API access. Requires E5. |
+| 6 | Insider risk management — purpose? | Detects and mitigates risky user activities (data theft, leaks, policy violations) using ML on signals from M365 and HR data, with privacy-by-design pseudonymization. Requires E5 or Insider Risk Management add-on. |
+| 7 | Insider risk management — common policy templates | Data theft by departing users, Data leaks, Data leaks by priority users, Patent/confidential information leaks, Security policy violations, General policy (customizable baseline). |
+| 8 | Communication compliance — purpose? | Detects policy violations in messages (harassment, threats, sensitive info sharing, regulatory violations) across Teams, Exchange, Yammer, and third-party connectors using ML classifiers. Requires E5/add-on. |
+| 9 | Record vs Regulatory Record label | Record: restricts edit/delete, but label can be removed by an authorized admin. Regulatory Record: same restrictions PLUS the label itself cannot be removed or downgraded by anyone until retention expires — used for strict regulatory mandates. |
+| 10 | Microsoft Service Trust Portal — what's it for? | Provides access to independent audit reports (SOC 1/2/3), ISO certifications, and documents describing Microsoft's security, privacy, and compliance controls. NOT used to configure your tenant's own policies. |
+| 11 | Microsoft's core privacy principles | Control (customer owns/manages their data), Transparency (clear about data collection/use), Security (strong protections/encryption), plus Strong legal protections and No content-based targeted advertising. |
+| 12 | eDiscovery Premium — unique analytics features | Near-duplicate detection, email threading, themes, custodian communications/notifications, and review sets — none of which exist in Content search or eDiscovery Standard. |
